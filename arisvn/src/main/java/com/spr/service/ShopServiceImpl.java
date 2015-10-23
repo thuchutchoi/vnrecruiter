@@ -22,7 +22,7 @@ import com.spr.repository.QueryMethod;
 import com.spr.repository.ShopPredicates;
 //import com.spr.repository.ShopPredicates;
 import com.spr.repository.ShopRepository;
-import com.spr.repository.ShopSpecifications;
+//import com.spr.repository.ShopSpecifications;
 import com.spr.repository.TodoRepository;
 import com.spr.repository.UserRepository;
 
@@ -55,11 +55,11 @@ public class ShopServiceImpl implements ShopService {
 		for (Shop sho : timBoiTen) {
 			System.out.println("Tim boi ten"+sho.getId());
 		}
-		List<Shop> findAll = todo.findAll(ShopSpecifications
-				.nameIsLike("nghia"));
-		for (Shop sho : findAll) {
-			System.out.println(sho.getName());
-		}
+//		List<Shop> findAll = todo.findAll(ShopSpecifications
+//				.nameIsLike("nghia"));
+//		for (Shop sho : findAll) {
+//			System.out.println(sho.getName());
+//		}
 		List<Shop> search = search("nghia");
 		for (Shop shop2 : search) {
 			System.out.println("DSL" + shop2.getName());

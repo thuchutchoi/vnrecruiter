@@ -29,7 +29,6 @@ public class UserRepositoryImpl implements UserRepositoryCustom {
 
 	}
 
-	@Override
 	public List<Shop> findShopForPage(int index) {
 		Page requestedPage = shopRepository.findAll(
 				ShopPredicates.lastNameIsLike(null),
